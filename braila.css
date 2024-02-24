@@ -240,7 +240,7 @@ body {
   border-radius: 50px;
   margin-top:2vw; 
   margin-bottom: 2.5vw;
-  filter:drop-shadow(5px 5px 15px black)
+  filter:drop-shadow(5px 5px 15px #3A405A)
 }
 
 .carousel-caption {
@@ -272,3 +272,48 @@ body {
   color: white;
   
 }
+
+footer {
+			background-color: #3A405A;
+			color: #FFF;
+			padding: 20px;
+			text-align: center;
+			font-size: 14px;
+			margin-top: 30px;
+        }
+	
+	footer a {
+		color: #FFF;
+		text-decoration: underline;
+	}
+	
+	@media only screen and (max-width: 600px) {
+		header {
+			font-size: 28px;
+		}
+		
+		nav {
+			padding: 10px;
+		}
+		
+		nav li {
+			margin: 0 10px;
+		}
+		
+		nav a {
+			font-size: 16px;
+			padding: 5px 10px;
+		}
+		
+		h2 {
+			font-size: 24px;
+		}
+		
+		p {
+			font-size: 14px;
+		}
+		
+		footer {
+			font-size: 12px;
+		}
+	}
