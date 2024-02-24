@@ -1,12 +1,14 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content ="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="braila.css">
 </head>
 <body>
- 
+ <nav>
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -20,15 +22,75 @@
     </nav>
     </nav>
  <div class="zigzag-container">
-        <p>Bine ai venit pe VolunTeen - platforma care aduce împreună ONG-uri pasionate și adolescenți plini de energie pentru a face schimbarea în comunitatea noastră!
+        <p class="paragraph1"><p1>Bine ai venit pe VolunTeen - platforma care aduce împreună ONG-uri pasionate și adolescenți plini de energie pentru a face schimbarea în comunitatea noastră! </p1>
 
-            Ești adolescent și vrei să te implici activ în proiecte care contează cu adevărat? Sau ești parte dintr-un ONG dedicat schimbării sociale și ai nevoie de ajutorul tinerilor pentru a-ți îndeplini misiunea? Ai ajuns în locul potrivit!
+          <p>  Ești adolescent și vrei să te implici activ în proiecte care contează cu adevărat? Sau ești parte dintr-un ONG dedicat schimbării sociale și ai nevoie de ajutorul tinerilor pentru a-ți îndeplini misiunea? Ai ajuns în locul potrivit!
             
             VolunTeen facilitează legătura dintre ONG-uri și voluntarii adolescenți, oferind o platformă simplă și intuitivă pentru înscrierea și găsirea proiectelor de voluntariat. Înregistrează-te acum și descoperă oportunitățile de a-ți folosi timpul și energia pentru a face o diferență reală în lumea noastră.</p>
         <ul>
             <li><a href="ong_login.html">Join as an ONG</a></li>
             <li><a href="volunteer_login.html">Join as a Volunteer</a></li>
           </ul>
+          </p>
       </div>
+
+
+      <!--login registration form-->
+
+<section class="home">
+  <div class ="form_container">
+    <i class="uil uil-times form_close"></i>
+
+    <div class="form login_form">
+      <form action="#">
+      <h2>Login</h2>
+ <div class ="input_box">
+  <input type="email" placeholder="Enter your email" required />
+  <i clas="uil uil-envelope-alt email"></i>
+ </div>
+ <div class ="input_box">
+  <input type="password" placeholder="Enter your password" required/>
+  <i clas="uil uil-eye-slash pw_hide"></i>
+ </div>
+
+ <div class="option_field"> 
+  <span class="checkbox">
+    <input type="checkbox" id="check">
+    <label for="check">Remember me</label>
+   </span>
+   <a href="#" class="forgot_pw">Forgot password</a>
+   </div>
+   <button class="button">Login Now</button>
+   <div class="login_signup">Don't have an account?<a href="#" id="signup">Signup</a></div>
+  </form>
+    </div>
+
+<!--Signup Form-->
+
+        <div class="form signup_form">
+          <form action="#">
+          <h2>Signup</h2>
+     <div class ="input_box">
+      <input type="email" placeholder="Enter your email" required />
+      <i clas="uil uil-envelope-alt email"></i>
+     </div>
+     <div class ="input_box">
+      <input type="password" placeholder="Create password" required/>
+      <i clas="uil uil-eye-slash pw_hide"></i>
+     </div>
+     <div class ="input_box">
+      <input type="password" placeholder="Confirm password" required/>
+      <i clas="uil uil-eye-slash pw_hide"></i>
+     </div>
+       <button class="button">Signup Now</button>
+       <div class="login_signup">Already have an account?<a href="#" id="signup">Signup</a></div>
+      </form>
+        </div>
+
+  </div>
+</section>
 </body>
+
+
+
 </html>
