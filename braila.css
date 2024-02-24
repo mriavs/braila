@@ -1,4 +1,4 @@
-
+body { background-color: #FFFEF7; }
 
 nav {
     font-family: sans-serif;
@@ -44,7 +44,7 @@ nav li:not(:last-child)::after {
 
 nav a {
     text-decoration: none;
-    color: #FFAE03;
+    color: #EF6351;
     font-size: 25px;
     font-weight: bold;
     padding: 10px 20px;
@@ -55,7 +55,7 @@ nav a {
 
 nav a:hover {
     font-size: 30px;
-    background-color: #FFAE03;
+    background-color: #EF6351;
     color: #FFF;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     transform: scale(1.1);
@@ -70,7 +70,7 @@ nav a:hover {
 }
 
 .login-signup-container button {
-    background-color: #FFAE03;
+    background-color: #EF6351;
     color: #FFF;
     border: none;
     padding: 10px 20px;
@@ -114,14 +114,50 @@ body {
   }
   
   .zigzag-container {
-    width: 85vw; /* Adjust the width as needed */
-    padding: 5vw; /* Adjust the padding as needed */
-    margin: auto; /* Center the container horizontally */
-    margin-top: 20px; /* Add margin-top to create space */
-    background-color: #EF6351;
+    width: 85vw;
+    padding: 5vw;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #FFAE03;
     color: white;
     position: relative;
-    border-bottom-left-radius: 70px; /* Adjust the border radius as needed */
-    border-bottom-right-radius: 70px; /* Adjust the border radius as needed */
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    display: flex; /* Use flexbox to display items side by side */
+    justify-content: center; /* Center the items horizontally */
+    flex-direction: column; /* Set the flex direction to column to stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .zigzag-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox to display list items side by side */
+  }
+  
+  .zigzag-container li {
+    margin-bottom: 10px;
+  }
+  
+  .zigzag-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vw;
+    transition: color 0.3s ease-in-out;
+    padding: 10px; 
+    background-color: #ffcb5a; 
+    border-radius: 10px; 
+    margin: 5vw; 
+  }
+  
+  .zigzag-container a:hover {
+    color: #3A405A;
+    font-size: 3vw;
+  }
+  .zigzag-container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding:30px;
   }
   
