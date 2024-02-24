@@ -4,9 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="braila.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="carusel.js"></script>
 </head>
 <body>
- 
+    <img src="logo.jpg" alt="logomare" class="logo">
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -18,17 +20,81 @@
             <button>Sign Up</button>
         </div>
     </nav>
-    </nav>
- <div class="zigzag-container">
-        <p class="paragraph1">Bine ai venit pe VolunTeen - platforma care aduce împreună ONG-uri pasionate și adolescenți plini de energie pentru a face schimbarea în comunitatea noastră! </p1>
 
-          <p>  Ești adolescent și vrei să te implici activ în proiecte care contează cu adevărat? Sau ești parte dintr-un ONG dedicat schimbării sociale și ai nevoie de ajutorul tinerilor pentru a-ți îndeplini misiunea? Ai ajuns în locul potrivit!
-            
-            VolunTeen facilitează legătura dintre ONG-uri și voluntarii adolescenți, oferind o platformă simplă și intuitivă pentru înscrierea și găsirea proiectelor de voluntariat. Înregistrează-te acum și descoperă oportunitățile de a-ți folosi timpul și energia pentru a face o diferență reală în lumea noastră.</p>
+    <div class="zigzag-container">
+        <p class="paragraph1"> Bine ai venit pe platforma care aduce împreună ONG-uri si voluntari adolescenti plini de energie pentru a schimba lumea! </p1>
         <ul>
             <li><a href="ong_login.html">Join as an ONG</a></li>
             <li><a href="volunteer_login.html">Join as a Volunteer</a></li>
-          </ul>
-      </div>
+        </ul>
+    </div>
+
+    <div class="actiune-container">
+        <p> Începe acum!</p>
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="image1.jpg" alt="Image 1">
+                    <div class="carousel-caption">Bătrâni</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image2.jpg" alt="Eco">
+                    <div class="carousel-caption">Eco</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image3.jpg" alt="Animale">
+                    <div class="carousel-caption">Animale</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image4.jpg" alt="Copii">
+                    <div class="carousel-caption">Copii</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image5.jpg" alt="Educație">
+                    <div class="carousel-caption">Educație</div>
+                </div>
+            </div>
+            <!-- Add navigation controls for the carousel -->
+            <button class="prev"><</button>
+            <button class="next">></button>
+        </div>
+    </div>
+    
+    
+
+    <script>
+$(document).ready(function() {
+    var itemWidth = $('.carousel-item').outerWidth(true);
+    var numItems = $('.carousel-item').length;
+    var visibleItems = 3; // Numărul de elemente vizibile în carusel
+
+    // Setează lățimea containerului intern al caruselului
+    $('.carousel-inner').css('width', itemWidth * numItems + 'px');
+
+    // Funcție pentru deplasarea caruselului înainte
+    $('.next').click(function() {
+        $('.carousel-inner').animate({
+            marginLeft: '-=' + itemWidth * visibleItems + 'px'
+        }, 500, function() {
+            $('.carousel-inner').append($('.carousel-item:lt(' + visibleItems + ')'));
+            $('.carousel-inner').css('margin-left', '0');
+        });
+    });
+
+    // Funcție pentru deplasarea caruselului înapoi
+    $('.prev').click(function() {
+        $('.carousel-inner').css('margin-left', '-' + itemWidth * visibleItems + 'px');
+        $('.carousel-inner').prepend($('.carousel-item:gt(' + (numItems - visibleItems - 1) + ')'));
+        $('.carousel-inner').animate({
+            marginLeft: '+=' + itemWidth * visibleItems + 'px'
+        }, 500);
+    });
+});
+
+</script>
+
 </body>
 </html>
