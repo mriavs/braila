@@ -283,7 +283,7 @@ font-size:20;
 .checkbox
 {
   display:flex;
-  column-gap: 8px;;
+  column-gap: 8px;
   white-space: nowrap;       
 }
 
