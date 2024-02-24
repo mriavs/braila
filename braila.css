@@ -79,7 +79,7 @@ nav a:hover {
 }
 
 .login-signup-container button:hover {
-    background-color: #555;
+    background-color: #3A405A;
 }
 
 
@@ -168,9 +168,9 @@ body {
    }
    
    .logo {
-    width: 75vw ;
+    width: 45vw ;
     display: block; 
-    margin: 20px auto; 
+    margin-left: 27vw;
 }
 
 .prev,
@@ -181,7 +181,7 @@ body {
     z-index: 1; 
     background-color:#4ECDC4; 
     border: none; 
-    color: white;
+    color: #F7FFF7;
     font-size: 50px; 
     padding: 10px; 
     border-radius: 20px;
@@ -249,7 +249,7 @@ body {
   left: 0;
   width: 100%;
   background-color: #4ECDC4; 
-  color: white;
+  color: #F7FFF7;
   font-size: 2vw;
   margin-right:110px;
 }
@@ -269,13 +269,13 @@ body {
 .actiune-container p {
   text-align: center; 
   font-size: 4vw;
-  color: white;
+  color: #F7FFF7;
   
 }
 
 footer {
 			background-color: #3A405A;
-			color: #FFF;
+			color: #F7FFF7;
 			padding: 20px;
 			text-align: center;
 			font-size: 14px;
@@ -283,7 +283,7 @@ footer {
         }
 	
 	footer a {
-		color: #FFF;
+		color: #F7FFF7;
 		text-decoration: underline;
 	}
 	

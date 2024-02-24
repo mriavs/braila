@@ -1,0 +1,250 @@
+body { background-color: #4ECDC4; }
+
+nav {
+    font-family: sans-serif;
+    background-color: #FFFEF7;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    position: relative; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+/*nav li {
+    margin: 0 20px;
+    position: relative; 
+}*/
+
+nav li:not(:last-child) {
+    margin-right: 40px; 
+}
+
+nav li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -20px; 
+    width: 4px; 
+    height: 100%; 
+    /*background-color: #FFAE03; 
+    transform: translateY(-50%); */
+}
+
+nav a {
+    text-decoration: none;
+    color: #EF6351;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    display: block;
+}
+
+nav a:hover {
+    font-size: 30px;
+    background-color: #EF6351;
+    color: #F7FFF7;
+    box-shadow: 0px 4px 10px #3A405A(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+
+.login-signup-container {
+    position: absolute;
+    top: 50%; 
+    right: 20px; 
+    transform: translateY(-50%); 
+}
+
+.login-signup-container button {
+    background-color: #EF6351;
+    color: #F7FFF7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-left: 10px; 
+}
+
+.login-signup-container button:hover {
+    background-color: #3A405A;
+}
+
+
+.login-signup-container {
+    position: absolute;
+    top: 50%; 
+    right: 20px;
+    transform: translateY(-50%); 
+    display: flex; }
+
+.login-signup-container button {
+    background-color: #3A405A;
+    color: #F7FFF7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-left: 10px; 
+    font-size: 25px; 
+    transition: all 0.3s ease-in-out;
+}
+
+.login-signup-container button:hover {
+    background-color: #3A405A;
+    font-size: 30px; 
+}
+
+.logo {
+    width: 45vw ;
+    display: block; 
+    margin-left: 27vw;
+}
+
+footer {
+    background-color: #3A405A;
+    color: #F7FFF7;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+      }
+  
+  footer a {
+  color: #F7FFF7;
+  text-decoration: underline;
+  }
+  
+
+
+
+
+body {
+    margin: 0;
+    justify-content:center;
+    align-items: center; 
+    height: 100vh; 
+  }
+
+  header {
+    background-color: #4ECDC4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #333;
+}
+ h3{
+    color:#4ECDC4;
+    font-size: 05vw;
+    text-align: center;
+ }
+
+.signup-button {
+    background-color: #4ECDC4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.signup-button:hover {
+    background-color: #83E5DE;
+}
+
+.event-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #3A405A;
+    color: #F7FFF7;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+footer a {
+color: #F7FFF7;
+text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+header {
+    font-size: 28px;
+}
+
+nav {
+    padding: 10px;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 14px;
+}
+
+footer {
+    font-size: 12px;
+}
+}
+
+.event-image {
+    width: 50%;
+    height: 94%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    float: left; /* Adaugăm float pentru a plasa imaginea la stânga */
+    margin-right: 20px; /* Adăugăm margin-right pentru a separa imaginea de text */
+}
+
+.event-details {
+    margin-left: 50%; /* Plasăm textul la dreapta imaginii */
+    max-width: 50%; /* Limităm lățimea textului pentru a evita suprapunerea cu imaginea pe dispozitive mici */
+}
+
+.signup-button {
+    display: block; /* Facem butonul un element de bloc pentru a-l plasa sub text */
+    margin-top: 20px; /* Spațiu între text și buton */
+}
