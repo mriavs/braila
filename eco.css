@@ -1,4 +1,4 @@
-body { background-color: #4ECDC4; }
+body { background-color: #EF6351; }
 
 nav {
     font-family: sans-serif;
@@ -35,8 +35,8 @@ nav li:not(:last-child)::after {
     content: '';
     position: absolute;
     top: 50%;
-    right: -20px; 
-    width: 4px; 
+    right: -20px;
+    width: 4px;
     height: 100%; 
     /*background-color: #FFAE03; 
     transform: translateY(-50%); */
@@ -61,6 +61,7 @@ nav a:hover {
     transform: scale(1.1);
 }
 
+
 .login-signup-container {
     position: absolute;
     top: 50%; 
@@ -80,6 +81,7 @@ nav a:hover {
 .login-signup-container button:hover {
     background-color: #3A405A;
 }
+
 
 .login-signup-container {
     position: absolute;
@@ -154,95 +156,57 @@ footer {
     font-size: 12px;
 }
 }
+  
 
-
-body {
-    margin: 0;
-    justify-content:center;
-    align-items: center; 
-    height: 100vh; 
-  }
-
-  header {
-    background-color: #4ECDC4;
-    color: white;
-    padding: 20px;
-    text-align: center;
+nain {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    align-items: stretch;
 }
-
-main {
-    padding: 20px;
-}
-
 section {
-    background-color: #f9f9f9;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: #F7FFF7;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    height: 100%;
+    border-radius: 50px;
+    filter: drop-shadow(5px 5px 15px #3A405A); 
+    margin-bottom: 20px; /* Add margin-bottom for vertical space between sections */
+    transition: transform 0.3s ease-in-out;
 }
 
-h1, h2 {
-    color: #333;
+
+
+section:hover {
+    transform: scale(1.1); 
 }
- h3{
-    color:#4ECDC4;
-    font-size: 05vw;
+
+h1 {color: #333;
+    border: 4px #333;
+    background-color: #FFF;
+}
+h2 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 20px;
     text-align: center;
- }
-
-.signup-button {
-    background-color: #4ECDC4;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
 }
 
-.signup-button:hover {
-    background-color: #83E5DE;
-}
-
-.event-title {
-    text-align: center;
-    font-size: 24px;
+p {
+    font-size: 16px;
+    line-height: 1.5;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
-
-
-.event-image {
-    width: 50%;
-    height: 94%;
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
-    margin-bottom: 20px;
-    float: left; /* Adaugăm float pentru a plasa imaginea la stânga */
-    margin-right: 20px; /* Adăugăm margin-right pentru a separa imaginea de text */
-    border-color: #F7FFF7;
-}
-
-.event-details {
-    margin-left: 50%; /* Plasăm textul la dreapta imaginii */
-    max-width: 50%; /* Limităm lățimea textului pentru a evita suprapunerea cu imaginea pe dispozitive mici */
-}
-
-.signup-button {
-    display: block; /* Facem butonul un element de bloc pentru a-l plasa sub text */
-    margin-top: 20px; /* Spațiu între text și buton */
-}
-
-.confirmation-message {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #EF6351;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #4ECDC4(0, 0, 0, 0.2);
-    font-size: 20px;
-
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
