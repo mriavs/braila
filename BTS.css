@@ -61,7 +61,6 @@ nav a:hover {
     transform: scale(1.1);
 }
 
-
 .login-signup-container {
     position: absolute;
     top: 50%; 
@@ -81,7 +80,6 @@ nav a:hover {
 .login-signup-container button:hover {
     background-color: #3A405A;
 }
-
 
 .login-signup-container {
     position: absolute;
@@ -111,7 +109,6 @@ nav a:hover {
     display: block; 
     margin-left: 27vw;
 }
-
 footer {
     background-color: #3A405A;
     color: #F7FFF7;
@@ -119,15 +116,43 @@ footer {
     text-align: center;
     font-size: 14px;
     margin-top: 30px;
-      }
-  
-  footer a {
-  color: #F7FFF7;
-  text-decoration: underline;
-  }
-  
+}
 
+footer a {
+color: #F7FFF7;
+text-decoration: underline;
+}
 
+@media only screen and (max-width: 600px) {
+header {
+    font-size: 28px;
+}
+
+nav {
+    padding: 10px;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 14px;
+}
+
+footer {
+    font-size: 12px;
+}
+}
 
 
 body {
@@ -185,50 +210,7 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
-footer {
-    background-color: #3A405A;
-    color: #F7FFF7;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 30px;
-}
 
-footer a {
-color: #F7FFF7;
-text-decoration: underline;
-}
-
-@media only screen and (max-width: 600px) {
-header {
-    font-size: 28px;
-}
-
-nav {
-    padding: 10px;
-}
-
-nav li {
-    margin: 0 10px;
-}
-
-nav a {
-    font-size: 16px;
-    padding: 5px 10px;
-}
-
-h2 {
-    font-size: 24px;
-}
-
-p {
-    font-size: 14px;
-}
-
-footer {
-    font-size: 12px;
-}
-}
 
 .event-image {
     width: 50%;
@@ -237,6 +219,7 @@ footer {
     margin-bottom: 20px;
     float: left; /* Adaugăm float pentru a plasa imaginea la stânga */
     margin-right: 20px; /* Adăugăm margin-right pentru a separa imaginea de text */
+    border-color: #F7FFF7;
 }
 
 .event-details {
@@ -247,4 +230,18 @@ footer {
 .signup-button {
     display: block; /* Facem butonul un element de bloc pentru a-l plasa sub text */
     margin-top: 20px; /* Spațiu între text și buton */
+}
+
+.confirmation-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #EF6351;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #4ECDC4(0, 0, 0, 0.2);
+    font-size: 20px;
+
 }

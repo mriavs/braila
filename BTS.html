@@ -5,6 +5,7 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="BTS.css">
+    <script src="script.js"></script>
     
 </head>
 <body>
@@ -18,7 +19,6 @@
         <div class="login-signup-container">
         
             <button>Log In</button>
-    
             <button>Sign Up</button>
         </div>
     </nav>
@@ -32,9 +32,7 @@
                 <h2>Organizatori:</h2>
                 <p>CJ Brăila, ANBPR, Helix, CONAF, Casa de Cultură a Municipiului Brăila, Port Romanel, Cuptor pe Vatră, Uninstal, BENTO, Amibios, Franklin Templeton, TermHidro, VARD, Pancronex, CJE Brăila, IME, EProDesign.</p>
             </div>
-        </section>
-        
-        <section>
+    
             <div class="event-details">
                 <h2>Calificări necesare:</h2>
                 <ul>
@@ -42,18 +40,23 @@
                     <li>Abilități de comunicare și coordonare;</li>
                     <li>Capacitatea de a lucra în echipă;</li>
                 </ul>
-                <button class="signup-button">Sign Up Now</button>
+
+                <h2>Criterii suplimentare:</h2>
+                <li>Minim 18 ani.</>
+                <button class="signup-button" onclick="showConfirmation()">Sign Up Now</button>
             </div>
             
         </section>
-        
-        
-            <
        
     </main>
+   
+    <div id="confirmationMessage" class="confirmation-message">
+        V-am trimis un email de confirmare pentru a vă asigura locul. Vă rugăm să vă verificați căsuța de email. 
+    </div>
 
     <footer>
         <p>&copy; 2024 VolunTeen. All rights reserved by <a href="#">PixelPower</a>.</p>
     </footer>
+
 </body>
 </html>

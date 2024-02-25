@@ -30,7 +30,7 @@
     </div>
 
     <div class="actiune-container">
-        <p> Începe acum!</p>
+        <p>Sau începe acum!</p>
     </div>
 
     <div class="carousel-container">
@@ -68,12 +68,12 @@
 $(document).ready(function() {
     var itemWidth = $('.carousel-item').outerWidth(true);
     var numItems = $('.carousel-item').length;
-    var visibleItems = 3; // Numărul de elemente vizibile în carusel
+    var visibleItems = 3; 
 
-    // Setează lățimea containerului intern al caruselului
+    
     $('.carousel-inner').css('width', itemWidth * numItems + 'px');
 
-    // Funcție pentru deplasarea caruselului înainte
+   
     $('.next').click(function() {
         $('.carousel-inner').animate({
             marginLeft: '-=' + itemWidth * visibleItems + 'px'
@@ -83,7 +83,7 @@ $(document).ready(function() {
         });
     });
 
-    // Funcție pentru deplasarea caruselului înapoi
+
     $('.prev').click(function() {
         $('.carousel-inner').css('margin-left', '-' + itemWidth * visibleItems + 'px');
         $('.carousel-inner').prepend($('.carousel-item:gt(' + (numItems - visibleItems - 1) + ')'));
