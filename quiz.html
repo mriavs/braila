@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Fit Quiz</title>
+    <style>
+footer {
+    background-color: #3A405A;
+    color: #F7FFF7;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+footer a {
+color: #F7FFF7;
+text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+header {
+    font-size: 28px;
+}
+
+nav {
+    padding: 10px;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 14px;
+}
+
+footer {
+    font-size: 12px;
+}
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Background colors for different sections */
+        .section:nth-child(odd) {
+            background-color: #EF6351; /* Red */
+        }
+
+        .section:nth-child(even) {
+            background-color: #FFAE03; /* Orange */
+        }
+
+        .section:nth-child(3n) {
+            background-color: #4ECDC4; /* Green */
+        }
+
+        h2 {
+            color: #fff; /* White text for better contrast */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #fff; /* White text for better contrast */
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #result {
+            display: none;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #fff;}
+
+    .confirmation-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F7FFF7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #4ECDC4(0, 0, 0, 0.2);
+    font-size: 40px;
+
+}
+    </style>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <div class="section">
+            <h2>Ce tip de activitate ti se potriveste?</h2>
+        </div>
+
+        <div class="section">
+            <h2>1. Ce mediu preferi pentru activitățile tale de voluntariat?</h2>
+            <form>
+                <label><input type="radio" name="q1" value="A"> A. În aer liber, în mijlocul naturii</label>
+                <label><input type="radio" name="q1" value="B"> B. În săli de clasă sau spații educaționale</label>
+                <label><input type="radio" name="q1" value="C"> C. În medii medicale sau de îngrijire a sănătății</label>
+                <label><input type="radio" name="q1" value="D"> D. În comunități locale, organizând evenimente și proiecte</label>
+                <label><input type="radio" name="q1" value="E"> E. În compania animalelor, în adăposturi sau centre de protecție</label>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>2. Ce tip de activități te atrag cel mai mult?</h2>
+            <form>
+                <label><input type="radio" name="q2" value="A"> A. Activități fizice și sportive</label>
+                    <label><input type="radio" name="q2" value="B"> B. Mentorat și predare</label>
+                        <label><input type="radio" name="q2" value="C"> C. Servicii medicale și de asistență medicală</label>
+                            <label><input type="radio" name="q2" value="D"> D. Organizarea de evenimente și proiecte comunitare</label>
+                                 <label><input type="radio" name="q2" value="E"> E. Interacțiunea cu animalele și grija față de ele</label>
+
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>3. Cât timp liber ai disponibil pentru voluntariat într-o săptămână?</h2>
+            <form>
+                <label><input type="radio" name="q3" value="A"> A. Cateva ore</label>
+                <label><input type="radio" name="q3" value="B"> B. 2-5 ore</label>
+                    <label><input type="radio" name="q3" value="C"> C. 5-10 ore</label>
+                        <label><input type="radio" name="q3" value="D"> D. 10-20 ore</label>
+                            <label><input type="radio" name="q3" value="E"> E. Mai mult de 20 de ore</label>
+
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>4. Care dintre următoarele abilități te caracterizează cel mai bine?</h2>
+            <form>
+                <label><input type="radio" name="q4" value="A"> A. Abilități de conștientizare și protejare a mediului</label>
+                <label><input type="radio" name="q4" value="B"> B. Abilități de învățare și predare</label>
+                <label> <input type="radio" name="q4" value="C"> C. Abilități medicale sau de prim ajutor</label>
+                    <label><input type="radio" name="q4" value="D"> D. Abilități de organizare și leadership</label>
+                        <label><input type="radio" name="q4" value="E"> E. Empatie și grijă față de animale</label>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>5. Cu ce grup de vârstă te simți cel mai confortabil lucrând?</h2>
+            <form>
+                <label><input type="radio" name="q5" value="A"> A. Cu toate grupele de vârstă</label>
+                <label><input type="radio" name="q5" value="B"> B. Teaching and mentoring skills</label>
+                <label><input type="radio" name="q5" value="C"> C. Cu adulți și persoane în vârstă</label>
+                <label><input type="radio" name="q5" value="D"> D. Cu grupuri diverse de vârstă</label>
+                <label><input type="radio" name="q5" value="E"> E. Cu toate grupele de vârstă, inclusiv animale</label>
+    
+            </form>
+        </div>
+        <button class="signup-button" onclick="showConfirmation()">Submit</button>
+        </form>
+
+        <!-- Result Section -->
+        <div id="result">
+            <h2>Your Fit Activities:</h2>
+            <p id="resultText"></p>
+        </div>
+    </div>
+
+    <div id="confirmationMessage" class="confirmation-message">
+        Rezultat: Activități educaționale!
+    </div>
+
+
+    <script>
+       function showConfirmation() {
+    document.getElementById('confirmationMessage').style.display = 'block';
+    setTimeout (function() {
+                confirmationMessage.style.display = 'none';
+                window.location.href = "educatie.html"; // Redirect to home screen
+            }, 2000);
+}
+
+
+        function calculateResult() {
+            // Get user's answers
+            var answers = document.forms["quizForm"].elements
+            var result = '';
+
+            // Calculate scores
+            var scoreA = 0;
+            var scoreB = 0;
+            var scoreC = 0;
+            var scoreD = 0;
+            var scoreE = 0;           
+            for (var i = 0; i < answers.length; i++) {
+                if (answers[i].type === 'radio' && answers[i].checked) {
+                    if (answers[i].value === 'A') {
+                        scoreA++;
+                    } else if (answers[i].value === 'B') {
+                        scoreB++;
+                    }else if (answers[i].value === 'C') {
+                        scoreC++;}
+                        else if (answers[i].value === 'D') {
+                        scoreD++;}
+                        else if (answers[i].value === 'E') {
+                        scoreE++;}
+                }
+            }
+
+
+            // Determine the result
+            if (scoreA >= scoreB && scoreA >= scoreC && scoreA >= scoreD && scoreA >= scoreE) {
+                result = 'Activitati de ecologizare';
+            } else 
+            if (scoreB >= scoreA && scoreB >= scoreC && scoreB >= scoreD && scoreB >= scoreE)
+            {
+                result = 'Activitati educationale';
+            } else
+            if (scoreC >= scoreB && scoreC >= scoreA && scoreC >= scoreD && scoreC >= scoreE)
+{
+    result ='Activitati cu batrani';
+}
+else
+            if (scoreD >= scoreB && scoreD >= scoreA && scoreD >= scoreC && scoreC >= scoreE)
+{
+    result ='Activitati cu tineri si copii';
+}
+else
+            if (scoreE >= scoreB && scoreE >= scoreA && scoreE >= scoreD && scoreE >= scoreC)
+{
+    result ='Activitati cu animale';
+}
+            // Display the result
+            document.getElementById('resultText').innerHTML = result;
+            document.getElementById('result').style.display = 'block';
+        }
+    </script>
+
+<footer>
+    &copy; 2024 VolunTeen. All rights reserved by PixelPower.
+</footer>
+
+</body>
+</html>
